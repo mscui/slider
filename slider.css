@@ -1,0 +1,64 @@
+#slider {
+    width: 580px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+.slides {
+    width: 5000px;
+    height: 250px;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+.slides li {
+    width: 580px;
+    height: 250px;
+    display: inline-block;
+}
+.slides-btn {
+    position: absolute;
+    bottom: 0px;
+    left: 216px;
+}
+.slides-btn:hover {
+    cursor: default;
+}
+.slides-btn li {
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    behavior: url(ie-css3.htc);
+    background-color: #fff;
+    display: inline-block;
+}
+.slides-btn li.active {
+    background-color: #3b91f0;
+}
+.slides-btn li:hover {
+    cursor: pointer;
+}
+.arrow {
+    position: absolute;
+    top: 50%;
+    width: 580px;
+    display: none;
+}
+.arrow-l,
+.arrow-r {
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+}
+.arrow-l {
+    float: left;
+    background: url(arrow-l.png) no-repeat center center;
+    background-size: 32px 32px;
+}
+.arrow-r {
+    float: right;
+    background: url(arrow-r.png) no-repeat center center;
+    background-size: 32px 32px;
+}
