@@ -14,7 +14,7 @@
             $btn.removeClass('active');
             if (count === $slidesItem.length - 1) {
                 count = 1;
-                $slides.css('marginLeft', -580);
+                $slides.css('marginLeft', -width);
                 $($btn.get(0)).addClass('active');
             } else {
                 var num = count - 1;
