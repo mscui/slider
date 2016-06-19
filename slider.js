@@ -58,7 +58,7 @@
     var toPic = function () {
         var num = $(this).index();
         // var $slider = $(this).closest('#slider');
-        $slides.animate({marginLeft: -width*num + 'px'}, animatespeed);
+        $slides.animate({marginLeft: -width*(num + 1) + 'px'}, animatespeed);
         $btn.removeClass('active');
         $($btn.get(num)).addClass('active');
         count = num + 1;
